@@ -1,0 +1,9 @@
+<!--下载mybatis作为数据库持久化工具，并实现mapper类中的getAllUsers()方法-->
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="repo.ljx.java.demo.mapper.TestMapper">
+    <select id = "getAllUsers" resultType = "User">
+            select * from user;
+    </select>
+</mapper>
